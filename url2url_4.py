@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+#python3.10
+# version 0.1 Beta
+# 20220601 h12.29
+
 # by Antonio "Visi@n" Broi
 
 import face_recognition
