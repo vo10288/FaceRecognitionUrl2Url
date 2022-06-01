@@ -286,10 +286,18 @@ if process_this_frame:
 	file.close()
 	
 	
-	command = ('eog '+(args["output_directory"])+'/url1'+str(filename)+'.png')
+	command = ('feh '+(args["output_directory"])+'/url1'+str(filename)+'.png')
 	subprocess.Popen(command, shell=True)
 	
-	command = ('eog '+(args["output_directory"])+'/url2'+str(filename)+'.png')
+	#sistemi Apple Mac 
+	#command = ('eog '+(args["output_directory"])+'/url1'+str(filename)+'.png')
+	#subprocess.Popen(command, shell=True)
+	
+	#sistemi Windows 
+	#command = ('open '+(args["output_directory"])+'/url1'+str(filename)+'.png')
+	#subprocess.Popen(command, shell=True)
+	
+	command = ('feh '+(args["output_directory"])+'/url2'+str(filename)+'.png')
 	subprocess.Popen(command, shell=True)
 	
 	command = ('tree')
@@ -297,6 +305,10 @@ if process_this_frame:
 	
 	command = ('cat '+(args["result_comparison"])+'/'+filename+'.csv')
 	subprocess.Popen(command, shell=True)
+	
+	#sistemi windows
+	#command = ('type '+(args["result_comparison"])+'/'+filename+'.csv')
+	#subprocess.Popen(command, shell=True)
 	
 	
 	cv2.imshow('url1', frame)
