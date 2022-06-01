@@ -44,7 +44,7 @@ def md5Checksum(filePath,url):
 
 	
 ap = argparse.ArgumentParser()
-ap.add_argument("-p", "--shape_predictor", default="/usr/local/lib/python2.7/dist-packages/face_recognition_models/models/shape_predictor_68_face_landmarks.dat",
+ap.add_argument("-p", "--shape_predictor", default="/usr/local/lib/python3.10/dist-packages/face_recognition_models/models/shape_predictor_68_face_landmarks.dat",
 	help="path to facial landmark predictor")
 ap.add_argument("-1", "--url1", default="https://pyxis.nymag.com/v1/imgs/c71/fb1/c5e5566dc3a6fe3db549e6042becb92415-04-charlize-theron.rsquare.w330.jpg", #required = True,
 	help="THE FIRST URL IMAGE")
